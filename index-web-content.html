@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MangoPlus – Cập nhật nội dung</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+  <div class="doc-header">
+    <div class="doc-title">
+      <div class="brand">MangoPlus</div>
+      <div class="sub">Cập nhật nội dung</div>
+      <div class="desc">Tài liệu nội bộ dành cho đội Sales TGDĐ / Điện Máy Xanh</div>
+    </div>
+    <div class="meta-box">
+      <span class="dot"></span>
+      <div>
+        <div class="date" id="updateDate">Đang tải…</div>
+        <div class="cycle" id="updateCycle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <div class="filter-group" id="groupFilters">
+      <button class="chip active" data-group="all" type="button">Tất cả</button>
+      <button class="chip" data-group="Show" type="button">Show</button>
+      <button class="chip" data-group="Phim" type="button">Phim</button>
+      <button class="chip" data-group="Short" type="button">Short</button>
+    </div>
+    <div class="filter-group">
+      <button class="chip toggle" id="filterExclusive" type="button">Độc quyền</button>
+      <button class="chip toggle" id="filterNew" type="button">Mới ra mắt</button>
+    </div>
+    <input type="text" id="searchInput" class="search-input" placeholder="Tìm theo tên chương trình…">
+  </div>
+
+  <div id="content">
+    <div class="state-msg">Đang tải nội dung…</div>
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
