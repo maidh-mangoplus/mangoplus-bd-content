@@ -50,7 +50,7 @@ body{margin:0;background:var(--paper);font-family:'Be Vietnam Pro',sans-serif;co
 .status-new{background:var(--new-bg);color:var(--new-fg)} .status-live{background:var(--live-bg);color:var(--live-fg);border:1px solid var(--live-bd)}
 .title{font-size:15px;font-weight:700;text-transform:uppercase;line-height:1.35;margin-bottom:4px;overflow-wrap:break-word;color:var(--brand)}
 .meta{font-size:11px;color:var(--ink-mute);margin-bottom:8px}
-.tomtat,.mota{font-size:12.5px;line-height:1.5;margin:0 0 10px;text-align:justify}
+.tomtat,.mota{font-size:12.5px;line-height:1.5;margin:0 0 10px;text-align:justify;white-space:pre-line}
 .tomtat{font-weight:600}
 .mota{color:var(--ink-soft)}
 .points{border-top:1px solid var(--line);padding-top:8px;margin-bottom:10px;display:flex;flex-direction:column;gap:4px}
@@ -58,7 +58,7 @@ body{margin:0;background:var(--paper);font-family:'Be Vietnam Pro',sans-serif;co
 .point::before{content:"✓";color:var(--phim);font-weight:700}
 .extra-fields{border-top:1px solid var(--line);padding-top:8px;margin-bottom:10px}
 .more-btn{font-family:inherit;font-size:11.5px;font-weight:700;color:var(--brand);background:none;border:none;padding:0;cursor:pointer}
-.luuy{font-size:11px;color:var(--ink-soft);line-height:1.6;margin:0 0 8px}
+.luuy{font-size:11px;color:var(--ink-soft);line-height:1.6;margin:0 0 8px;white-space:pre-line}
 .trailer-btn{font-family:inherit;font-size:11.5px;font-weight:700;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:7px 12px;cursor:pointer}
 
 /* Modal trailer */
