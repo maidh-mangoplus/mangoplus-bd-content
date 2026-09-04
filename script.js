@@ -86,7 +86,7 @@ function cardHtml(item) {
       '<p class="mota" id="mota-' + item.id + '" style="display:none">' + (item.moTaChiTiet || item.tomTat || '') + '</p>' +
       pointsHtml(item) +
       '<div class="extra-fields" id="extra-' + item.id + '" style="display:none">' +
-        (item.luuY ? '<p class="luuy"><strong>Lưu ý:</strong> ' + item.luuY + '</p>' : '') +
+        (item.luuY ? '<p class="luuy">' + item.luuY + '</p>' : '') +
         (item.trailerUrl ? '<button class="trailer-btn" data-trailer-id="' + item.id + '">▶ Xem trailer</button>' : '') +
       '</div>' +
       '<button class="more-btn" data-more="' + item.id + '">Xem thêm ▾</button>' +
