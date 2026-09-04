@@ -6,46 +6,59 @@
 <title>MangoPlus – Cập nhật nội dung</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="page">
 
   <div class="doc-header">
-    <div class="doc-title">
-      <div class="brand">MangoPlus</div>
-      <div class="sub">Cập nhật nội dung</div>
-      <div class="desc">Tài liệu nội bộ dành cho đội Sales TGDĐ / Điện Máy Xanh</div>
-    </div>
-    <div class="meta-box">
-      <span class="dot"></span>
-      <div>
-        <div class="date" id="updateDate">Đang tải…</div>
-        <div class="cycle" id="updateCycle"></div>
+    <div class="brand">MangoPlus</div>
+    <div class="sub">Cập nhật nội dung</div>
+  </div>
+
+  <div class="sticky-nav">
+    <div class="nav-row">
+      <div class="view-tabs">
+        <button data-view="tongquan" class="active">Tổng quan</button>
+        <button data-view="chitiet">Chi tiết</button>
+      </div>
+      <div class="history-nav">
+        <button class="nav-btn" id="nav-back" aria-label="Quay lại" title="Quay lại" disabled>‹</button>
+        <button class="nav-btn" id="nav-next" aria-label="Tiến tới" title="Tiến tới" disabled>›</button>
       </div>
     </div>
+    <div class="toolbar">
+      <button class="chip active" data-group="all">Tất cả</button>
+      <button class="chip" data-group="Show">Show</button>
+      <button class="chip" data-group="Phim">Phim</button>
+      <button class="chip" data-group="Short">Short</button>
+      <button class="chip" data-toggle="excl">Độc quyền</button>
+      <button class="chip" data-toggle="new">Mới ra mắt</button>
+      <input class="search-input" id="searchInput" placeholder="Tìm theo tên chương trình…">
+    </div>
   </div>
 
-  <div class="toolbar">
-    <div class="filter-group" id="groupFilters">
-      <button class="chip active" data-group="all" type="button">Tất cả</button>
-      <button class="chip" data-group="Show" type="button">Show</button>
-      <button class="chip" data-group="Phim" type="button">Phim</button>
-      <button class="chip" data-group="Short" type="button">Short</button>
+  <div id="view-tongquan">
+    <div class="top10-heading"><img src="mplus-logo.png" alt="MangoPlus" class="mp-logo"><span class="top10-text">Top 10</span></div>
+    <div class="top10-scroll-wrap" id="top10-wrap">
+      <div class="top10-row top10-row-1" id="top10-row1"></div>
+      <div class="top10-row top10-row-2" id="top10-row2"></div>
     </div>
-    <div class="filter-group">
-      <button class="chip toggle" id="filterExclusive" type="button">Độc quyền</button>
-      <button class="chip toggle" id="filterNew" type="button">Mới ra mắt</button>
-    </div>
-    <input type="text" id="searchInput" class="search-input" placeholder="Tìm theo tên chương trình…">
+    <div id="overview-groups"><div class="state-msg">Đang tải nội dung…</div></div>
   </div>
-
-  <div id="content">
-    <div class="state-msg">Đang tải nội dung…</div>
-  </div>
+  <div id="view-chitiet" style="display:none"><div id="grid-chitiet"></div></div>
 
 </div>
+
+<div class="modal-overlay" id="trailer-modal">
+  <div class="modal-panel">
+    <button class="modal-close" id="modal-close">✕</button>
+    <div id="trailer-embed-area"></div>
+    <a href="#" class="trailer-fallback" id="trailer-fallback-link" target="_blank" rel="noopener">Mở video gốc ↗</a>
+  </div>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
