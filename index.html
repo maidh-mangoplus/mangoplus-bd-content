@@ -22,6 +22,8 @@
       <div class="view-tabs">
         <button data-view="tongquan" class="active">Tổng quan</button>
         <button data-view="chitiet">Chi tiết</button>
+        <button data-view="scheme" style="display:none">Scheme</button>
+        <button data-view="report" style="display:none">Report</button>
       </div>
       <div class="history-nav">
         <button class="nav-btn" id="nav-back" aria-label="Quay lại" title="Quay lại" disabled>‹</button>
@@ -40,14 +42,24 @@
   </div>
 
   <div id="view-tongquan">
-    <div class="top10-heading"><img src="mplus-logo.png" alt="MangoPlus" class="mp-logo"><span class="top10-text">Top 10</span></div>
-    <div class="top10-scroll-wrap" id="top10-wrap">
+    <div class="top10-heading"><img src="mplus-logo.png" alt="MangoPlus" class="mp-logo" onerror="this.style.display='none'"><span class="top10-text">Top 10</span></div>
+    <div class="top10-scroll-wrap" id="top10Wrap">
       <div class="top10-row top10-row-1" id="top10-row1"></div>
       <div class="top10-row top10-row-2" id="top10-row2"></div>
     </div>
+    <div class="top10-caption" id="top10Caption" style="display:none"></div>
     <div id="overview-groups"><div class="state-msg">Đang tải nội dung…</div></div>
   </div>
   <div id="view-chitiet" style="display:none"><div id="grid-chitiet"></div></div>
+
+  <div id="view-scheme" style="display:none">
+    <div class="scheme-box" id="schemeContent"></div>
+  </div>
+
+  <div id="view-report" style="display:none">
+    <a href="https://datastudio.google.com/s/ugpaZDEDHvI" target="_blank" rel="noopener" class="report-link">📊 Xem báo cáo số liệu</a>
+    <div id="reportList"><div class="state-msg">Đang tải nội dung…</div></div>
+  </div>
 
 </div>
 
