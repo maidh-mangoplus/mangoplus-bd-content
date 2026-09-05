@@ -178,7 +178,7 @@ function renderScheme(schemeHtml) {
 function reportRowHtml(item) {
   return '<div class="report-row">' +
     '<div class="report-poster-wrap">' +
-      '<div class="report-poster">' + (item.posterDoc ? '<img src="' + item.posterDoc + '" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:10px" onerror="this.remove()">' : '') + '</div>' +
+      '<div class="report-poster">' +   (item.docQuyen ? '<div class="excl-badge">Độc quyền</div>' : '') +   (item.posterDoc ? '<img src="' + item.posterDoc + '" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:10px" onerror="this.remove()">' : '') + '</div>' +
       '<div class="report-air"><strong>' + (item.ngayAir || '—') + '</strong>Dự kiến air</div>' +
     '</div>' +
     '<div class="report-box">' +
