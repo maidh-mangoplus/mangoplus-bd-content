@@ -165,13 +165,13 @@ function renderTongQuan() {
 
 // ---- Scheme ----
 function renderScheme(schemeHtml) {
-  const tabBtn = document.querySelector('[data-view="scheme"]');
+  const box = document.getElementById('schemeContent');
   if (!schemeHtml || !schemeHtml.trim()) {
-    tabBtn.style.display = 'none';
-    return;
+    box.style.display = 'none';
+  } else {
+    box.style.display = '';
+    box.innerHTML = schemeHtml;
   }
-  tabBtn.style.display = '';
-  document.getElementById('schemeContent').innerHTML = schemeHtml;
 }
 
 // ---- Report ----
@@ -203,7 +203,7 @@ function reportRowHtml(item) {
 function renderReport() {
   const sorted = reportData.filter(matches).sort((a, b) => parseDateVN(a.ngayAir) - parseDateVN(b.ngayAir));
   document.getElementById('reportList').innerHTML = sorted.map(reportRowHtml).join('') ||
-    '<div class="state-msg">Chưa có nội dung sắp ra mắt.</div>';
+    '<div class="state-msg">Không tìm thấy nội dung phù hợp.</div>';
   document.querySelectorAll('[data-more-report]').forEach(btn => {
     btn.addEventListener('click', () => {
       const id = btn.dataset.moreReport;
@@ -221,6 +221,13 @@ function renderReport() {
     const item = reportData.find(d => String(d.id) === btn.dataset.trailerId);
     if (item) openTrailerModal(item.trailerUrl);
   }));
+}
+
+function refreshCurrentView() {
+  const v = currentView();
+  if (v === 'chitiet') renderChiTiet();
+  else if (v === 'tongquan') renderTongQuan();
+  else if (v === 'report') renderReport();
 }
 function parseDateVN(str) {
   if (!str) return Infinity;
