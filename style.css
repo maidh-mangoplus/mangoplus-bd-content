@@ -160,7 +160,7 @@ body{margin:0;background:var(--paper);font-family:'Be Vietnam Pro',sans-serif;co
   body{padding-bottom:48px}
   #grid-chitiet{grid-template-columns:1fr}
   .grid-overview{grid-template-columns:repeat(3,1fr)}
-  .top10-scroll-wrap{overflow-x:auto;padding-bottom:8px}
+  .top10-scroll-wrap{display:flex;overflow-x:auto;padding-bottom:8px}
   .top10-row{flex-wrap:nowrap;transform:none!important}
   .top10-row-2{margin-top:0}
   .top10-num{font-size:var(--top10-num-size-m)}
