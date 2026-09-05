@@ -26,7 +26,7 @@
   --top10-gap-9-10: 45px; /* chừa thêm khoảng trước số 10 vì số này rộng hơn */
 
   /* Độ lệch trái/phải của hàng 1 và hàng 2 (chỉ thấy rõ nếu 1 hàng còn dư chỗ so với khung) */
-  --top10-row1-shift: -10px;
+  --top10-row1-shift: -25px;
   --top10-row2-shift: 20px;
   --top10-row-gap: 50px; /* khoảng cách giữa hàng 1 và hàng 2 */
 
