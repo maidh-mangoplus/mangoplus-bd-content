@@ -41,7 +41,7 @@ body{margin:0;background:var(--paper);font-family:'Be Vietnam Pro',sans-serif;co
 .state-msg{padding:48px 0;text-align:center;color:var(--ink-mute);font-size:13.5px}
 .doc-header{margin-bottom:16px;text-align:center;padding-top:15px}
 .brand-logo{height:30px;width:auto;margin-bottom:12px}
-.sub{font-size:50px;font-weight:1100;text-transform:uppercase;color:var(--brand)}
+.sub{font-size:50px;font-weight:999;text-transform:uppercase;color:var(--brand)}
 
 .sticky-nav{position:sticky;top:0;background:var(--paper);z-index:50;padding-top:12px;padding-bottom:4px;border-bottom:1px solid var(--line)}
 .nav-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px}
