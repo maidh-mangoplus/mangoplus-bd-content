@@ -201,7 +201,7 @@ function reportRowHtml(item) {
   '</div>';
 }
 function renderReport() {
-  const sorted = [...reportData].sort((a, b) => parseDateVN(a.ngayAir) - parseDateVN(b.ngayAir));
+  const sorted = reportData.filter(matches).sort((a, b) => parseDateVN(a.ngayAir) - parseDateVN(b.ngayAir));
   document.getElementById('reportList').innerHTML = sorted.map(reportRowHtml).join('') ||
     '<div class="state-msg">Chưa có nội dung sắp ra mắt.</div>';
   document.querySelectorAll('[data-more-report]').forEach(btn => {
@@ -305,7 +305,7 @@ window.addEventListener('resize', () => { if (currentView() === 'chitiet') equal
 function currentView() { return document.querySelector('.view-tabs button.active').dataset.view; }
 function refreshCurrentView() {
   const v = currentView();
-  if (v === 'chitiet') renderChiTiet(); else if (v === 'tongquan') renderTongQuan();
+  if (v === 'chitiet') renderChiTiet(); else if (v === 'tongquan') renderTongQuan(); else if (v === 'report') renderReport();
 }
 
 // ---- Khởi tạo ----
