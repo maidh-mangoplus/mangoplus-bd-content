@@ -39,9 +39,9 @@ body{margin:0;background:var(--paper);font-family:'Be Vietnam Pro',sans-serif;co
 .demo-note{background:#FFF3E0;border:1px solid #F0C896;border-radius:8px;padding:10px 14px;font-size:12.5px;color:#7A4A16;margin:20px 0}
 
 .state-msg{padding:48px 0;text-align:center;color:var(--ink-mute);font-size:13.5px}
-.doc-header{margin-bottom:16px}
-.brand{font-size:24px;font-weight:700;color:var(--brand)}
-.sub{font-size:24px;font-weight:700}
+.doc-header{margin-bottom:16px;text-align:center}
+.brand-logo{height:45px;width:auto}
+.sub{font-size:60px;font-weight:800;text-transform:uppercase}
 
 .sticky-nav{position:sticky;top:0;background:var(--paper);z-index:50;padding-top:12px;padding-bottom:4px;border-bottom:1px solid var(--line)}
 .nav-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px}
@@ -84,11 +84,11 @@ body{margin:0;background:var(--paper);font-family:'Be Vietnam Pro',sans-serif;co
 .tomtat{font-weight:600}
 .mota{color:var(--ink-soft)}
 .points{border-top:1px solid var(--line);padding-top:8px;margin-bottom:10px;display:flex;flex-direction:column;gap:4px}
-.point{font-size:11.5px;color:var(--ink-soft);display:flex;gap:6px}
+.point{font-size:11.5px;color:var(--ink-soft);display:flex;gap:6px;text-align:justify}
 .point::before{content:"✓";color:var(--phim);font-weight:700}
 .extra-fields{border-top:1px solid var(--line);padding-top:8px;margin-bottom:10px}
 .more-btn{font-family:inherit;font-size:11.5px;font-weight:700;color:var(--brand);background:none;border:none;padding:0;cursor:pointer}
-.luuy{font-size:11px;color:var(--ink-soft);line-height:1.6;margin:0 0 8px;white-space:pre-line}
+.luuy{font-size:11px;color:var(--ink-soft);line-height:1.6;margin:0 0 8px;white-space:pre-line;text-align:justify}
 .trailer-btn{font-family:inherit;font-size:11.5px;font-weight:700;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:7px 12px;cursor:pointer}
 
 .modal-overlay{position:fixed;inset:0;background:rgba(28,26,23,.6);display:none;align-items:center;justify-content:center;z-index:1000;padding:20px}
