@@ -147,7 +147,7 @@ body{margin:0;background:var(--paper);font-family:'Be Vietnam Pro',sans-serif;co
 /* Report */
 .report-row{display:flex;align-items:flex-start;gap:14px;margin-bottom:30px}
 .report-poster-wrap{width:130px;flex-shrink:0}
-.report-poster{width:100%;aspect-ratio:324/453;border-radius:10px;background:linear-gradient(160deg,#EFEAE1,#E3DDD0)}
+.report-poster{position:relative;width:100%;aspect-ratio:324/453;border-radius:10px;background:linear-gradient(160deg,#EFEAE1,#E3DDD0)}
 .report-air{font-size:11px;color:var(--ink-mute);margin-top:8px;text-align:center}
 .report-air strong{color:var(--ink-soft);font-weight:700;display:block;font-size:12px}
 .report-box{flex:1;min-width:0;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
