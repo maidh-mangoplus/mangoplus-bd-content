@@ -23,7 +23,7 @@
   /* Khoảng hở GIỮA 2 cặp liền kề (poster trước -> số sau) */
   --top10-gap-1-2: 35px;  --top10-gap-2-3: 35px;  --top10-gap-3-4: 35px;  --top10-gap-4-5: 35px;
   --top10-gap-6-7: 35px;  --top10-gap-7-8: 35px;  --top10-gap-8-9: 35px;
-  --top10-gap-9-10: 40px; /* chừa thêm khoảng trước số 10 vì số này rộng hơn */
+  --top10-gap-9-10: 35px; /* chừa thêm khoảng trước số 10 vì số này rộng hơn */
 
   /* Độ lệch trái/phải của hàng 1 và hàng 2 (chỉ thấy rõ nếu 1 hàng còn dư chỗ so với khung) */
   --top10-row1-shift: -35px;
@@ -136,7 +136,7 @@ body{margin:0;background:var(--paper);font-family:'Be Vietnam Pro',sans-serif;co
 .top10-row-2 .top10-item:nth-child(5){margin-left:var(--top10-gap-9-10)}
 .top10-row-2 .top10-item:nth-child(5) .top10-poster{margin-left:var(--top10-overlap-10)}
 
-.grid-overview{display:grid;grid-template-columns:repeat(8,1fr);gap:10px 8px}
+.grid-overview{display:grid;grid-template-columns:repeat(6,1fr);gap:10px 8px}
 .mini-card{cursor:pointer;opacity:0;animation:fadeUp .45s ease forwards;transition:opacity .2s ease}
 .mini-card.dimmed{opacity:.3!important;animation:none}
 .mini-poster{position:relative;width:100%;aspect-ratio:324/453;border-radius:8px;background:linear-gradient(160deg,#EFEAE1,#E3DDD0);margin-bottom:6px;transition:transform .15s ease;overflow:hidden}
