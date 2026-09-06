@@ -136,7 +136,7 @@ body{margin:0;background:var(--paper);font-family:'Be Vietnam Pro',sans-serif;co
 .top10-row-2 .top10-item:nth-child(5){margin-left:var(--top10-gap-9-10)}
 .top10-row-2 .top10-item:nth-child(5) .top10-poster{margin-left:var(--top10-overlap-10)}
 
-.grid-overview{display:grid;grid-template-columns:repeat(6,1fr);gap:10px 8px}
+.grid-overview{display:grid;grid-template-columns:repeat(7,1fr);gap:10px 8px}
 .mini-card{cursor:pointer;opacity:0;animation:fadeUp .45s ease forwards;transition:opacity .2s ease}
 .mini-card.dimmed{opacity:.3!important;animation:none}
 .mini-poster{position:relative;width:100%;aspect-ratio:324/453;border-radius:8px;background:linear-gradient(160deg,#EFEAE1,#E3DDD0);margin-bottom:6px;transition:transform .15s ease;overflow:hidden}
